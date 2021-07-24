@@ -1,20 +1,23 @@
 {
-    "name": "waitforscrollcontent",
-    "version": "1.0.0",
-    "description": "Handle the page to fetch the content by scroll and wait until all the content has been fetched.",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "",
-    "license": "MIT",
-    "devDependencies": {
-        "@typescript-eslint/eslint-plugin": "^4.28.4",
-        "@typescript-eslint/parser": "^4.28.4",
-        "eslint": "^7.31.0",
-        "eslint-config-airbnb-base": "^14.2.1",
-        "eslint-config-prettier": "^8.3.0",
-        "eslint-plugin-import": "^2.23.4",
-        "prettier": "2.3.2"
-    }
+  "name": "waitforscrollcontent",
+  "version": "1.0.0",
+  "description": "Handle the page to fetch the content by scroll and wait until all the content has been fetched.",
+  "main": "index.js",
+  "scripts": {
+    "check": "prettier --check .",
+    "format": "prettier --write .",
+    "lint": "eslint '**/*.{js,ts}'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.28.4",
+    "@typescript-eslint/parser": "^4.28.4",
+    "eslint": "^7.31.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "prettier": "2.3.2"
+  }
 }
