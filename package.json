@@ -2,11 +2,19 @@
   "name": "waitforscrollcontent",
   "version": "1.0.0",
   "description": "Handle the page to fetch the content by scroll and wait until all the content has been fetched.",
-  "main": "index.js",
+  "main": "./dist/cjs/index.js",
+  "types": "./dist/cjs/index.d.ts",
+  "exports": {
+    "import": "./dist/esm/index.js",
+    "require": "./dist/cjs/index.js",
+    "default": "./dist/cjs/index.js"
+  },
+  "files": ["dist"],
   "scripts": {
     "check": "prettier --check .",
     "format": "prettier --write .",
     "lint": "eslint '**/*.{js,ts}'",
+    "build": "tsc -p tsconfig.cjs.json && tsc -p tsconfig.esm.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -18,6 +26,7 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.23.4",
-    "prettier": "2.3.2"
+    "prettier": "2.3.2",
+    "typescript": "^4.3.5"
   }
 }
